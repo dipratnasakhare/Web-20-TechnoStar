@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0px;
+        padding: 0px;
+      }
+
+
+      /* big nav bar  */
+      .nav {
+        width: 100%;
+        height: 70px;
+        background-color: black;
+        display: grid;
+        
+        grid-template-columns: 10% 30% 41% 19%;
+      }
+      /* nav logo  */
+.nav div{
+ padding: 5px;
+}
+
+      .nav img {
+        width: 60px;
+        justify-content: center;
+        margin: auto;
+        margin-left: 25%;
+
+        border-radius: 100%;
+        background-color: rgb(255, 254, 251);
+      } 
+      /* first div  */
+   
+      /* second div  */
+      
+       /* second inner div  */
+      .nav > div:nth-child(2) :nth-of-type(1) {
+        background-color: rgb(0, 0, 0);
+        color: aliceblue;
+        width: 70%;
+        border: 1px solid white;
+        border-radius: 5px;
+        height: 30px;
+        margin: 15px;
+      }
+   /* third div  */
+      .nav > div:nth-child(3) {
+       
+         display: grid;
+        grid-template-columns:repeat(4, ifr);
+        gap: 10px;
+      
+      display: flex;
+    
+      font-size: large;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        
+      }
+      .nav > div:nth-child(3) div {
+        margin-right: 0px;
+        height:auto;
+        font-size: 15px;
+        width: 25%;
+        color: rgb(255, 254, 254);
+      }
+
+
+      /* forth div  */
+      .nav > div:nth-child(4) {
+        justify-content: space-evenly;
+        display: flex;
+        text-align: center;
+        height: 40px;
+        
+        
+      }
+      /* forth all inner div */
+      .nav > div:nth-child(4) div {
+        width: 30%;
+       
+       
+      }
+      .nav > div:nth-child(4) div>img{
+        width: 35px;
+      }
+      /* forth select icon  */
+      .nav > div:nth-child(4) div select {
+        width: 20px;
+        color: rgb(0, 0, 0);
+        background-color: aqua;
+        list-style: circle;
+      }
+
+
+
+    </style>
+  </head>
+  <body>
+    <!-- navigation box -->
+
+    <div class="nav">
+      <!-- first box logo contain -->
+      <div>
+        <img
+          src="https://th.bing.com/th/id/R.7a864f07681f187fb572468bfc949977?rik=EyUQGBjtSbMjVw&riu=http%3a%2f%2fpngimg.com%2fuploads%2fgithub%2fgithub_PNG80.png&ehk=sCQlSHnb7Wc8WNPgOilokXbf8jL4g20yv7QFEFpl6ko%3d&risl=&pid=ImgRaw&r=0"
+          alt=""
+        />
+      </div>
+
+      <!-- second box contain search  -->
+      <div>
+        <input type="search" placeholder="Search or jump to..." />
+      </div>
+
+      <!-- third box contain bar -->
+      <div>
+        <div>
+          <p>Pull requests</p>
+        </div>
+
+        <div>
+          <p>Issues</p>
+        </div>
+
+        <div><p>Marketplace</p></div>
+        <div><p>Explore</p></div>
+      </div>
+
+      <!-- forth box contain 🔔 -->
+      <div>
+        <div>
+          <img
+            src="https://cdn1.iconfinder.com/data/icons/rounded-black-basic-ui/139/Notification-RoundedBlack-512.png"
+            alt=""
+          />
+        </div>
+        <div>
+          <img
+            src="https://cdn1.iconfinder.com/data/icons/foxy-universal-circle-line/24/circle-round-userinterface-plus-add-512.png"
+            alt=""
+          />
+          <select>
+            <option value="">New repository</option>
+            <option value="">Import repository</option>
+            <option value="">New gits</option>
+          </select>
+        </div>
+        <div>
+          <img src="https://pbs.twimg.com/media/CCtGYRIWEAAvd7l.jpg" alt="" />
+          <select>
+            <option value="">New repository</option>
+            <option value="">Import repository</option>
+            <option value="">New gits</option>
+          </select>
+        </div>
+      </div>
+    </div>
+
+
+
+    </div>
+  </body>
+</html>
